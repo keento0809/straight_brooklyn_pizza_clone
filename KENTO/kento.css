@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+.header {
+  min-height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 90px;
+  min-height: 90px;
+}
+.header__left {
+  line-height: 80px;
+}
+.header__right {
+  line-height: 80px;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu-button span {
+  display: block;
+  width: 17px;
+  height: 3px;
+  margin-bottom: 3px;
+  background: #fff;
+}
+.header__titleLogo {
+  display: block;
+  width: 100px;
+  height: 41px;
+  margin-right: 1rem;
+}
+
+.hero {
+  min-height: 300px;
+  height: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0624/9739/0834/files/bridge_hero_900x.jpg?v=1646423010");
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__container {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 85%;
+  max-width: 414px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+.hero__container h2 {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 1.8px;
+}
+
+.delivery {
+  padding: 2rem 0;
+}
+.delivery__title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 1.8px;
+}
+.delivery__locationList {
+  padding-left: 0;
+  list-style: none;
+}
+.delivery__location {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.delivery__location h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 35px;
+}
+.delivery__location ion-icon {
+  display: block;
+  font-size: 22px;
+  line-height: 35px;
+}/*# sourceMappingURL=kento.css.map */
