@@ -1,3 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
+
+$testBgColor: #787878;
+$colorWhite: #fff;
+$colorBlack: #333;
+$fontWeight700: 700;
+$fontWeight600: 600;
+$baseLetterSpacing: 1.8px;
+
+// @mixin header {
+//   .header {
+//     // background: transparent;
+//     background: $testBgColor;
+
+//     &__left {
+//       background: red;
+//       min-height: 80px;
+//     }
+//   }
+// }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: red;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  font-weight: $fontWeight600;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+.header {
+  min-height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 90px;
+    min-height: 90px;
+    // padding: 0 20px;
+  }
+
+  &__left {
+    line-height: 80px;
+  }
+
+  &__right {
+    line-height: 80px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu-button span {
+    display: block;
+    width: 17px;
+    height: 3px;
+    margin-bottom: 3px;
+    background: $colorWhite;
+  }
+
+  &__titleLogo {
+    display: block;
+    width: 100px;
+    height: 41px;
+    margin-right: 1rem;
+  }
+}
+
+.hero {
+  min-height: 300px;
+  height: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0624/9739/0834/files/bridge_hero_900x.jpg?v=1646423010");
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 414px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+
+    & h2 {
+      margin: 0;
+      color: $colorWhite;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: $baseLetterSpacing;
+    }
+  }
+}
+
+.delivery {
+  padding: 2rem 0;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: $baseLetterSpacing;
+  }
+  &__locationList {
+    padding-left: 0;
+    list-style: none;
+  }
+  &__location {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid $colorBlack;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    & ion-icon {
+      display: block;
+      font-size: 22px;
+      line-height: 35px;
+    }
+  }
 }
