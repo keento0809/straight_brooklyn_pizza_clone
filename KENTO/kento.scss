@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap");
 
-$testBgColor: #787878;
+$colorGray: #e3e3e3;
 $colorWhite: #fff;
 $colorBlack: #333;
+$bgColorLittleGray: #f8f8f8;
 $fontWeight700: 700;
 $fontWeight600: 600;
 $baseLetterSpacing: 1.8px;
@@ -126,6 +127,7 @@ body {
 
 .delivery {
   padding: 4rem 0;
+  background: $bgColorLittleGray;
 
   &__title {
     margin: 0;
@@ -163,6 +165,77 @@ body {
   }
 }
 
+/* footer */
+.footer {
+  background: $bgColorLittleGray;
+  padding: 3rem 0;
+
+  &__container {
+    text-align: center;
+  }
+
+  & section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid $colorGray;
+
+    &:nth-child(3) {
+      border-bottom: none;
+    }
+  }
+
+  & a,
+  & p {
+    margin: 0;
+    color: $colorBlack;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & ul {
+    margin: 0;
+    padding-left: 0;
+    padding: 0.5rem 0;
+    list-style: none;
+
+    & li {
+      line-height: 30px;
+    }
+  }
+  &__contactEmail {
+    text-decoration: underline;
+  }
+
+  &__sectionTitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  &__socialMediaIconsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 !important;
+
+    & li {
+      min-width: 50px;
+    }
+  }
+  &__copyright {
+    padding-top: 1rem;
+  }
+  &__copyrightList p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+
+/* media query */
 @media screen and (min-width: 768px) {
   .wrapper {
     padding: 0 32px;
@@ -218,8 +291,6 @@ body {
     &__titleLogo {
       width: 160px;
       height: 62px;
-      &.inHeaderLeft {
-      }
     }
   }
   .hero {
