@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .title {
@@ -21,16 +21,61 @@ body {
 
 .details {
   color: #414141;
-  grid-template-columns: repeat(2, 1fr);
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.details .img-container {
+  overflow: hidden;
 }
 .details img {
   width: 100%;
+  -webkit-animation: pinchInAnime 1.5s ease-in-out 0.5s;
+          animation: pinchInAnime 1.5s ease-in-out 0.5s;
+}
+@-webkit-keyframes pinchInAnime {
+  0% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pinchInAnime {
+  0% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .details .location-info {
   background-color: #f1f2f3;
   padding: 9vw 2vw 0vw 2vw;
   line-height: 1.5vw;
+}
+.details .location-info .animationText {
+  -webkit-animation: fadeInAnime 1.5s ease-in-out 0.5s;
+          animation: fadeInAnime 1.5s ease-in-out 0.5s;
+}
+@-webkit-keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .details .location-info h1 {
   font-size: 2.5em;
