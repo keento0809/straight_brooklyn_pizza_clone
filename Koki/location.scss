@@ -22,7 +22,7 @@ body {
 
 .details {
   color: #414141;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
 
   img {
     width: 100%;
@@ -59,7 +59,7 @@ body {
 
 @media screen and (max-width: 770px) {
   .details {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
   .details:nth-child(2n) {
     img {
