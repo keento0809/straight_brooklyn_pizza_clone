@@ -1,0 +1,51 @@
+$colorMenu: white;
+$bold: 700;
+$fonts: 'Roboto Slab', serif;
+
+* {
+    font-family: $fonts;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: $colorMenu;
+    text-align: center;
+
+}
+
+.pizza-menu, .pizza-toppings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pizza-slice {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.pizza-menu {
+    &__firsthalf-menu {
+        text-align: right;
+        margin-left: 1%;
+    }
+    &__secondhalf-menu {
+        text-align: left;
+        margin-right: 3.5%;
+    }
+}
+
+.pizza-toppings {
+    &__firsthalf-menu {
+        text-align: right;
+        margin-left: 14%;
+    }
+    &__secondhalf-menu {
+        text-align: left;
+        margin-right: 2%;
+    }
+}
+
