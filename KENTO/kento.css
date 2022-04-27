@@ -12,6 +12,9 @@ body {
 .wrapper {
   padding: 0 20px;
 }
+.wrapper__delivery {
+  padding: 0 15px;
+}
 
 .header {
   min-height: 90px;
@@ -50,6 +53,28 @@ body {
   height: 41px;
   margin-right: 1rem;
 }
+.header__titleLogo.inHeaderLeft {
+  display: none;
+}
+.header__nav {
+  display: none;
+}
+.header__navList {
+  margin: 0;
+  margin-left: auto;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  max-width: 330px;
+  justify-content: space-between;
+}
+.header__navList a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
 
 .hero {
   min-height: 300px;
@@ -83,20 +108,23 @@ body {
 }
 
 .delivery {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 .delivery__title {
+  margin: 0;
   font-size: 40px;
   font-weight: 600;
   line-height: 50px;
   letter-spacing: 1.8px;
 }
 .delivery__locationList {
+  margin: 0;
+  padding-top: 0.8rem;
   padding-left: 0;
   list-style: none;
 }
 .delivery__location {
-  padding: 1.2rem 0;
+  padding: 1.1rem 0;
   border-bottom: 1px solid #333;
   display: flex;
   flex-direction: row;
@@ -112,4 +140,48 @@ body {
   display: block;
   font-size: 22px;
   line-height: 35px;
+  padding-top: 0.15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+  .wrapper__delivery {
+    padding: 0 30px;
+  }
+
+  .header {
+    min-height: 65px;
+  }
+  .header__container {
+    line-height: 65px;
+    min-height: 65px;
+  }
+  .header__menu-button {
+    display: none;
+  }
+  .header__titleLogo {
+    display: none;
+  }
+  .header__titleLogo.inHeaderLeft {
+    display: block;
+  }
+  .header__left {
+    line-height: 65px;
+  }
+  .header__right {
+    line-height: 65px;
+    justify-content: flex-end;
+  }
+  .header__nav {
+    display: block;
+    width: 100%;
+    flex-grow: 2;
+  }
+
+  .hero {
+    background-size: auto;
+    background-position: 50% 29%;
+  }
 }/*# sourceMappingURL=kento.css.map */

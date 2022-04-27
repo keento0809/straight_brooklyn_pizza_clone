@@ -7,18 +7,6 @@ $fontWeight700: 700;
 $fontWeight600: 600;
 $baseLetterSpacing: 1.8px;
 
-// @mixin header {
-//   .header {
-//     // background: transparent;
-//     background: $testBgColor;
-
-//     &__left {
-//       background: red;
-//       min-height: 80px;
-//     }
-//   }
-// }
-
 * {
   box-sizing: border-box;
 }
@@ -31,6 +19,10 @@ body {
 
 .wrapper {
   padding: 0 20px;
+
+  &__delivery {
+    padding: 0 15px;
+  }
 }
 
 .header {
@@ -74,6 +66,30 @@ body {
     width: 100px;
     height: 41px;
     margin-right: 1rem;
+
+    &.inHeaderLeft {
+      display: none;
+    }
+  }
+  &__nav {
+    display: none;
+  }
+  &__navList {
+    margin: 0;
+    margin-left: auto;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    max-width: 330px;
+    justify-content: space-between;
+
+    & a {
+      text-decoration: none;
+      color: $colorWhite;
+      font-weight: 400;
+      font-size: 14px;
+    }
   }
 }
 
@@ -111,20 +127,23 @@ body {
 }
 
 .delivery {
-  padding: 2rem 0;
+  padding: 4rem 0;
 
   &__title {
+    margin: 0;
     font-size: 40px;
     font-weight: 600;
     line-height: 50px;
     letter-spacing: $baseLetterSpacing;
   }
   &__locationList {
+    margin: 0;
+    padding-top: 0.8rem;
     padding-left: 0;
     list-style: none;
   }
   &__location {
-    padding: 1.2rem 0;
+    padding: 1.1rem 0;
     border-bottom: 1px solid $colorBlack;
     display: flex;
     flex-direction: row;
@@ -141,6 +160,52 @@ body {
       display: block;
       font-size: 22px;
       line-height: 35px;
+      padding-top: 0.15rem;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 0 32px;
+
+    &__delivery {
+      padding: 0 30px;
+    }
+  }
+
+  .header {
+    min-height: 65px;
+
+    &__container {
+      line-height: 65px;
+      min-height: 65px;
+    }
+
+    &__menu-button {
+      display: none;
+    }
+    &__titleLogo {
+      display: none;
+      &.inHeaderLeft {
+        display: block;
+      }
+    }
+    &__left {
+      line-height: 65px;
+    }
+    &__right {
+      line-height: 65px;
+      justify-content: flex-end;
+    }
+    &__nav {
+      display: block;
+      width: 100%;
+      flex-grow: 2;
+    }
+  }
+  .hero {
+    background-size: auto;
+    background-position: 50% 29%;
   }
 }
