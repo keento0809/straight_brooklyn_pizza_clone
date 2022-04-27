@@ -204,4 +204,12 @@ body {
     font-size: 42px;
     line-height: 48px;
   }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    min-height: 576px;
+  }
+  .hero__container {
+    max-width: 640px;
+  }
 }/*# sourceMappingURL=kento.css.map */
