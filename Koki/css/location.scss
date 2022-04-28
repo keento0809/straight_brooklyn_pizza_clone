@@ -27,6 +27,7 @@ body {
 
   .img-container {
     overflow: hidden;
+    background-color: #f1f2f3;
   }
 
   img {
@@ -90,7 +91,27 @@ body {
 @media screen and (max-width: 770px) {
   .details {
     grid-template-columns: 1fr;
+
+    .location-info {
+      h1 {
+        line-height: 3.5rem;
+      }
+      text-align: center;
+
+      h4 {
+        padding: 2rem 0rem 1rem 0rem;
+      }
+
+      p {
+        padding: 0.8rem 0 0.5rem 0;
+        line-height: 150%;
+      }
+      p:last-child {
+        padding-bottom: 3rem;
+      }
+    }
   }
+
   .details:nth-child(2n) {
     img {
       order: 1;
