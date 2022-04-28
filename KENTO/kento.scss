@@ -2,7 +2,7 @@
 
 $colorGray: #e3e3e3;
 $colorWhite: #fff;
-$colorBlack: #333;
+$colorBlack: #323232;
 $bgColorLittleGray: #f8f8f8;
 $fontWeight700: 700;
 $fontWeight600: 600;
@@ -13,6 +13,8 @@ $baseLetterSpacing: 1.8px;
 }
 
 body {
+  // temporary
+  min-height: 1000px;
   margin: 0;
   font-family: "Roboto Slab", serif;
   font-weight: $fontWeight600;
@@ -31,6 +33,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: all 0.3s ease;
+
+  &.active {
+    background: $colorBlack;
+  }
 
   &__container {
     display: flex;
@@ -392,6 +399,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: all 0.3s ease;
+
+  &.active {
+    background: $colorBlack;
+  }
 
   &__container {
     display: flex;
