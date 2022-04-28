@@ -278,6 +278,10 @@ body {
     // background-size: auto;
     background-position: 50% 29%;
   }
+
+  .footer section {
+    border-bottom: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -304,6 +308,34 @@ body {
         font-size: 42px;
         line-height: 48px;
       }
+    }
+  }
+
+  .footer {
+    padding: 0;
+
+    &__container {
+      padding: 0 32px;
+    }
+
+    &__contents {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+
+      & section {
+        flex: 33%;
+        text-align: left;
+      }
+    }
+    &__socialMediaIconsList {
+      margin-left: 0.5rem;
+      justify-content: flex-start;
+    }
+    &__copyright {
+      text-align: right;
+      padding-bottom: 3rem;
     }
   }
 }
