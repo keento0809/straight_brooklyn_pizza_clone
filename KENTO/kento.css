@@ -243,6 +243,10 @@ body {
   .hero {
     background-position: 50% 29%;
   }
+
+  .footer section {
+    border-bottom: none;
+  }
 }
 @media screen and (min-width: 1024px) {
   .header__left {
@@ -266,6 +270,31 @@ body {
   .hero__container h2 {
     font-size: 42px;
     line-height: 48px;
+  }
+
+  .footer {
+    padding: 0;
+  }
+  .footer__container {
+    padding: 0 32px;
+  }
+  .footer__contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .footer__contents section {
+    flex: 33%;
+    text-align: left;
+  }
+  .footer__socialMediaIconsList {
+    margin-left: 0.5rem;
+    justify-content: flex-start;
+  }
+  .footer__copyright {
+    text-align: right;
+    padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 1440px) {
