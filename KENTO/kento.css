@@ -162,6 +162,7 @@ body {
   font-size: 22px;
   line-height: 35px;
   padding-top: 0.15rem;
+  cursor: pointer;
 }
 .delivery__location ion-icon.triggerIcon {
   display: block;
