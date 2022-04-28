@@ -349,3 +349,395 @@ body {
     }
   }
 }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// mixin wrapper {
+@mixin wrapper {
+  padding: 0 20px;
+
+  &__delivery {
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+
+    &__delivery {
+      padding: 0 30px;
+    }
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// mixin header
+@mixin header {
+  min-height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 90px;
+  }
+
+  &__left {
+    line-height: 80px;
+  }
+
+  &__right {
+    line-height: 80px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__menu-button span {
+    display: block;
+    width: 17px;
+    height: 3px;
+    margin-bottom: 3px;
+    background: $colorWhite;
+  }
+
+  &__titleLogo {
+    display: block;
+    width: 100px;
+    height: 41px;
+    margin-right: 1rem;
+
+    &.inHeaderLeft {
+      display: none;
+    }
+  }
+  &__nav {
+    display: none;
+  }
+  &__navList {
+    margin: 0;
+    margin-left: auto;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    max-width: 330px;
+    justify-content: space-between;
+
+    & a {
+      text-decoration: none;
+      color: $colorWhite;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    min-height: 65px;
+
+    &__container {
+      min-height: 65px;
+    }
+
+    &__menu-button {
+      display: none;
+    }
+    &__titleLogo {
+      display: none;
+      &.inHeaderLeft {
+        display: block;
+      }
+    }
+    &__left {
+      line-height: 65px;
+    }
+    &__right {
+      line-height: 65px;
+      justify-content: flex-end;
+    }
+    &__nav {
+      display: block;
+      width: 100%;
+      flex-grow: 2;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    &__left {
+      line-height: 90px;
+    }
+    &__right {
+      line-height: 90px;
+    }
+    &__titleLogo {
+      width: 160px;
+      height: 62px;
+    }
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// mixin hero
+@mixin hero {
+  min-height: 300px;
+  height: 100%;
+  background: url("https://cdn.shopify.com/s/files/1/0624/9739/0834/files/bridge_hero_900x.jpg?v=1646423010");
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 414px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+
+    & h2 {
+      margin: 0;
+      color: $colorWhite;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: $baseLetterSpacing;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-position: 50% 29%;
+  }
+  @media screen and (min-width: 1024px) {
+    min-height: 410px;
+
+    &__container {
+      width: 100%;
+      padding-top: 0;
+
+      & h2 {
+        font-size: 42px;
+        line-height: 48px;
+      }
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    min-height: 576px;
+
+    &__container {
+      max-width: 640px;
+    }
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// mixin footer
+@mixin footer {
+  background: $bgColorLittleGray;
+  padding: 3rem 0;
+
+  &__container {
+    text-align: center;
+  }
+
+  & section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid $colorGray;
+
+    &:nth-child(3) {
+      border-bottom: none;
+    }
+  }
+
+  & a,
+  & p {
+    margin: 0;
+    color: $colorBlack;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & ul {
+    margin: 0;
+    padding-left: 0;
+    padding: 0.5rem 0;
+    list-style: none;
+
+    & li {
+      line-height: 30px;
+    }
+  }
+  &__contactEmail {
+    text-decoration: underline;
+  }
+
+  &__sectionTitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  &__socialMediaIconsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 !important;
+
+    & li {
+      min-width: 50px;
+    }
+  }
+  &__copyright {
+    padding-top: 1rem;
+  }
+  &__copyrightList p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    & section {
+      border-bottom: none;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+
+    &__container {
+      padding: 0 32px;
+    }
+
+    &__contents {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+
+      & section {
+        flex: 33%;
+        text-align: left;
+      }
+    }
+    &__socialMediaIconsList {
+      margin-left: 0.5rem;
+      justify-content: flex-start;
+    }
+    &__copyright {
+      text-align: right;
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// mixin footer
+@mixin delivery {
+  padding: 4rem 0;
+  background: $bgColorLittleGray;
+
+  &__title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: $baseLetterSpacing;
+  }
+  &__locationList {
+    margin: 0;
+    padding-top: 0.8rem;
+    padding-left: 0;
+    list-style: none;
+  }
+  &__location {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid $colorBlack;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    & ion-icon {
+      display: block;
+      font-size: 22px;
+      line-height: 35px;
+      padding-top: 0.15rem;
+    }
+  }
+}
+
+// @mixin testingStyle {
+//   color: aquamarine;
+//   font-weight: bold;
+//   list-style: none;
+
+//   &__container {
+//     color: orangered;
+//   }
+//   &__list {
+//     font-size: 40px;
+//   }
+// }
+
+// .testing {
+//   @include testingStyle;
+// }
