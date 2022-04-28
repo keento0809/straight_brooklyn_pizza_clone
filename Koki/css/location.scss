@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+$location-bg-color: #f8f8f8;
+$location-details-bg-color: #f1f2f3;
+$location-basic-color: #333333;
+$location-title-color: #414141;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  color: #333333;
+  color: $location-basic-color;
 }
 
 body {
@@ -16,18 +21,18 @@ body {
   text-align: center;
   font-size: 1.5em;
   padding: 3vw;
-  background-color: #f8f8f8;
+  background-color: $location-bg-color;
   font-family: 'Roboto Slab', serif;
 }
 
 .details {
-  color: #414141;
+  color: $location-title-color;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
   .img-container {
     overflow: hidden;
-    background-color: #f1f2f3;
+    background-color: $location-details-bg-color;
   }
 
   img {
@@ -46,7 +51,7 @@ body {
   }
 
   .location-info {
-    background-color: #f1f2f3;
+    background-color: $location-details-bg-color;
     padding: 9vw 2vw 0vw 2vw;
     line-height: 1.5vw;
 
