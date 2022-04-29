@@ -15,7 +15,8 @@
   text-align: center;
 }
 
-.pizza-menu, .pizza-toppings {
+.pizza-menu,
+.pizza-toppings {
   display: flex;
   justify-content: space-between;
 }
@@ -78,13 +79,15 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .pizza-menu, .pizza-toppings {
+  .pizza-menu,
+.pizza-toppings {
     display: block;
     text-align: center;
   }
 
   .story {
     background-image: none;
+    height: auto;
   }
   .story__story-part {
     display: block;
