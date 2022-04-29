@@ -1,5 +1,10 @@
 * {
   font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 100%;
 }
 
 .menu {
@@ -38,4 +43,37 @@
 .pizza-toppings__secondhalf-menu {
   text-align: left;
   margin-right: 2%;
+}
+
+.footer-menu {
+  margin-bottom: 2%;
+}
+
+.story__story-part {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+}
+.story__story-tell {
+  position: absolute;
+  text-align: center;
+  width: 45%;
+  height: 50%;
+  bottom: 20px;
+  top: 190px;
+  left: 810px;
+  background-color: white;
+}
+
+.images__first-collage {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.story__second-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }/*# sourceMappingURL=nicolo.css.map */

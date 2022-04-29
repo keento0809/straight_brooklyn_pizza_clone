@@ -1,9 +1,13 @@
 $colorMenu: white;
-$bold: 700;
 $fonts: 'Roboto Slab', serif;
 
 * {
     font-family: $fonts;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 100%;
 }
 
 .menu {
@@ -12,7 +16,6 @@ $fonts: 'Roboto Slab', serif;
     background-color: black;
     color: $colorMenu;
     text-align: center;
-
 }
 
 .pizza-menu, .pizza-toppings {
@@ -49,3 +52,39 @@ $fonts: 'Roboto Slab', serif;
     }
 }
 
+.footer-menu {
+    margin-bottom: 2%;
+}
+
+.story {
+    &__story-part {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    }
+    &__story-tell {
+        position: absolute;
+        text-align: center;
+        width: 45%;
+        height: 50%;      
+        bottom: 20px;
+        top: 190px;
+        left: 810px;
+        background-color: white;
+    }
+}
+
+.images {
+    &__first-collage {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.story__second-collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
