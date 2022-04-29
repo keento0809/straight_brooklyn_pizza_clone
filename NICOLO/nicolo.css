@@ -49,22 +49,21 @@
   margin-bottom: 2%;
 }
 
+.story {
+  background-image: url(https://cdn.shopify.com/s/files/1/0624/9739/0834/files/our-story_8b3c630e-8456-407c-a98f-48b891da386d.jpg?v=1646751500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+  height: 750px;
+}
 .story__story-part {
   display: block;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 5%;
-}
-.story__story-tell {
-  position: absolute;
+  background: white;
   text-align: center;
   width: 45%;
-  height: 50%;
-  bottom: 20px;
-  top: 190px;
-  left: 810px;
-  background-color: white;
+  margin-left: 55%;
 }
 
 .images__first-collage {
@@ -76,4 +75,20 @@
 .story__second-collage {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 500px) {
+  .pizza-menu, .pizza-toppings {
+    display: block;
+    text-align: center;
+  }
+
+  .story {
+    background-image: none;
+  }
+  .story__story-part {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=nicolo.css.map */
