@@ -26,7 +26,7 @@ body {
   //
   height: 2em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 28px;
   padding: 3vw;
   background-color: $location-bg-color;
   font-family: 'Roboto Slab', serif;
@@ -40,11 +40,12 @@ body {
   .img-container {
     overflow: hidden;
     background-color: $location-details-bg-color;
+    height: auto;
   }
 
   img {
     width: 100%;
-
+    display: block;
     animation: pinchInAnime 1.5s ease-in-out 0.5s;
     @keyframes pinchInAnime {
       0% {
@@ -59,9 +60,9 @@ body {
 
   .location-info {
     background-color: $location-details-bg-color;
-    padding: 9vw 2vw 0vw 2vw;
+    padding: 5vw 2vw 1vw 2vw;
     line-height: 1.5vw;
-    font-weight: 15px;
+    font-size: 15px;
 
     .animationText {
       animation: fadeInAnime 1.5s ease-in-out 0.5s;
@@ -83,16 +84,19 @@ body {
       font-size: 40px;
       margin-bottom: 5px;
       font-family: 'Roboto Slab', serif;
-      margin-bottom: 45px;
+      margin-bottom: 35px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      line-height: 3.5rem;
     }
 
     strong {
       padding-bottom: 1vw;
       line-height: 20px;
+      font-size: 15px;
     }
 
     span {
-      padding: 1px 0;
       font-weight: lighter;
       border-bottom: 1px solid;
       line-height: 20px;
@@ -105,23 +109,16 @@ body {
 }
 
 @media screen and (max-width: 770px) {
+  .title {
+    padding: 23vw 0;
+  }
+
   .details {
     grid-template-columns: 1fr;
 
     .location-info {
-      h1 {
-        line-height: 3.5rem;
-      }
       text-align: center;
 
-      h4 {
-        padding: 2rem 0rem 1rem 0rem;
-      }
-
-      p {
-        padding: 0.8rem 0 0.5rem 0;
-        line-height: 150%;
-      }
       p:last-child {
         padding-bottom: 3rem;
       }
