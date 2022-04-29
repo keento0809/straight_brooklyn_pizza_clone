@@ -7,6 +7,7 @@ const triggerIcons = document.querySelectorAll(".triggerIcon");
 const triggerIconsMinus = document.querySelectorAll(".triggerIcon-minus");
 
 function handleCheckScrollY() {
+  console.log(window.scrollY);
   if (window.scrollY > 0 && header.classList.contains("active")) return;
   header.classList.add("active");
   if (window.scrollY === 0) header.classList.remove("active");

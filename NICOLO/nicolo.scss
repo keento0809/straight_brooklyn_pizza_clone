@@ -1,104 +1,106 @@
 $colorMenu: white;
-$fonts: 'Roboto Slab', serif;
+$fonts: "Roboto Slab", serif;
 
 * {
-    font-family: $fonts;
-    box-sizing: border-box;
+  font-family: $fonts;
+  box-sizing: border-box;
 }
 
 .image {
-    width: 100%;
+  width: 100%;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: $colorMenu;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: $colorMenu;
+  text-align: center;
 }
 
-.pizza-menu, .pizza-toppings {
-    display: flex;
-    justify-content: space-between;
+.pizza-menu,
+.pizza-toppings {
+  display: flex;
+  justify-content: space-between;
 }
 
 .pizza-slice {
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    margin-top: 2%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-top: 2%;
 }
 
 .pizza-menu {
-    &__firsthalf-menu {
-        text-align: right;
-        margin-left: 1%;
-    }
-    &__secondhalf-menu {
-        text-align: left;
-        margin-right: 3.5%;
-    }
+  &__firsthalf-menu {
+    text-align: right;
+    margin-left: 1%;
+  }
+  &__secondhalf-menu {
+    text-align: left;
+    margin-right: 3.5%;
+  }
 }
 
 .pizza-toppings {
-    &__firsthalf-menu {
-        text-align: right;
-        margin-left: 14%;
-    }
-    &__secondhalf-menu {
-        text-align: left;
-        margin-right: 2%;
-    }
+  &__firsthalf-menu {
+    text-align: right;
+    margin-left: 14%;
+  }
+  &__secondhalf-menu {
+    text-align: left;
+    margin-right: 2%;
+  }
 }
 
 .footer-menu {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .story {
-    background-image: url(https://cdn.shopify.com/s/files/1/0624/9739/0834/files/our-story_8b3c630e-8456-407c-a98f-48b891da386d.jpg?v=1646751500);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 5%;
-    height: 750px;
-    &__story-part {
-        display: block;
-        background: white;
-        text-align: center;
-        width: 45%;
-        margin-left: 55%;
-
-    }
+  background-image: url(https://cdn.shopify.com/s/files/1/0624/9739/0834/files/our-story_8b3c630e-8456-407c-a98f-48b891da386d.jpg?v=1646751500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+  height: 750px;
+  &__story-part {
+    display: block;
+    background: white;
+    text-align: center;
+    width: 45%;
+    margin-left: 55%;
+  }
 }
 
 .images {
-    &__first-collage {
-        margin-top: 5%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  &__first-collage {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .story__second-collage {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media only screen and (max-width: 500px) {
-    .pizza-menu, .pizza-toppings {
-        display: block;
-        text-align: center;
-    }
+  .pizza-menu,
+  .pizza-toppings {
+    display: block;
+    text-align: center;
+  }
 
-    .story {
-        background-image: none;
-        &__story-part {
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-        }
+  .story {
+    background-image: none;
+    height: auto;
+    &__story-part {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
     }
-} 
+  }
+}
