@@ -4,9 +4,472 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Straight_brooklyn_pizza_clone</title>
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2f86e9d358.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./NICOLO/nicolo.css" />
+    <link rel="stylesheet" href="../KENTO/kento.css" />
+    <title>Straight_Brooklyn_Pizza_Clone</title>
   </head>
-  <!-- We will merge all of our works to this index.html file later -->
-  <body></body>
+  <body id="home">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- KENTO's part -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__container">
+          <div class="header__left">
+            <div class="header__menu-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header__title">
+              <a data-easing="easeInOutQuad" href="#home">
+                <img
+                  class="header__titleLogo inHeaderLeft"
+                  src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/Brooklyn_Logo_5.5in_wide_1445x.png?v=1646953696"
+                  alt="logoImage"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__right">
+            <div class="header__title">
+              <img
+                class="header__titleLogo"
+                src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/Brooklyn_Logo_5.5in_wide_1445x.png?v=1646953696"
+                alt="logoImage"
+              />
+            </div>
+            <nav class="header__nav">
+              <ul class="header__navList">
+                <li>
+                  <a data-scroll href="#deliverySection">Delivery</a>
+                </li>
+                <li>
+                  <a data-scroll href="#menuSection">Menu</a>
+                </li>
+                <li>
+                  <a data-scroll href="#ourStorySection">Our Story</a>
+                </li>
+                <li>
+                  <a href="./Koki/location.html">Locations</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hero animating">
+      <div class="wrapper">
+        <div class="hero__container animating">
+          <h2>BRINGING A SLICE OF BROOKLYN TO VANCOUVER</h2>
+          <!-- <p>testing</p> -->
+        </div>
+      </div>
+    </div>
+    <div id="deliverySection" class="delivery">
+      <div class="wrapper__delivery">
+        <div class="delivery__container">
+          <h1 class="delivery__title">DELIVERY</h1>
+          <ul class="delivery__locationList">
+            <li class="delivery__location">
+              <div class="delivery__locationOutline">
+                <h3>ROBSON</h3>
+                <ion-icon class="triggerIcon" name="add-outline"></ion-icon>
+                <ion-icon
+                  class="triggerIcon-minus"
+                  name="remove-outline"
+                ></ion-icon>
+              </div>
+              <div class="delivery__accordionContent">
+                <div class="">
+                  <p class="delivery__locationAddress">
+                    350 Robson St., Vancouver
+                  </p>
+                  <ul class="delivery__orderWaysList">
+                    <li class="orderWay">
+                      <a href="">Order pick-up</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Order on DoorDash</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Order on Skip the Dishes</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Call Robson</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="delivery__location">
+              <div class="delivery__locationOutline">
+                <h3>CHINATOWN</h3>
+                <ion-icon class="triggerIcon" name="add-outline"></ion-icon>
+                <ion-icon
+                  class="triggerIcon-minus"
+                  name="remove-outline"
+                ></ion-icon>
+              </div>
+              <div class="delivery__accordionContent">
+                <div class="">
+                  <p class="delivery__locationAddress">
+                    648 Main St., Vancouver
+                  </p>
+                  <ul class="delivery__orderWaysList">
+                    <li class="orderWay">
+                      <a href="">Order on DoorDash </a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Order on Skip the Dishes</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Order on Uber Eats</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Call Chinatown</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="delivery__location">
+              <div class="delivery__locationOutline">
+                <h3>FRASERHOOD</h3>
+                <ion-icon class="triggerIcon" name="add-outline"></ion-icon>
+                <ion-icon
+                  class="triggerIcon-minus"
+                  name="remove-outline"
+                ></ion-icon>
+              </div>
+              <div class="delivery__accordionContent">
+                <div class="">
+                  <p class="delivery__locationAddress">
+                    701 Kingsway (at Fraser), Vancouver
+                  </p>
+                  <ul class="delivery__orderWaysList">
+                    <li class="orderWay">
+                      <a href="">Order on DoorDash</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Order on Uber Eats</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Call Fraserhood</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="delivery__location">
+              <div class="delivery__locationOutline">
+                <h3>GASTOWN</h3>
+                <ion-icon class="triggerIcon" name="add-outline"></ion-icon>
+                <ion-icon
+                  class="triggerIcon-minus"
+                  name="remove-outline"
+                ></ion-icon>
+              </div>
+              <div class="delivery__accordionContent">
+                <div class="">
+                  <p class="delivery__locationAddress">
+                    114 Water St., Vancouver
+                  </p>
+                  <ul class="delivery__orderWaysList">
+                    <li class="orderWay">
+                      <a href="">Order on Uber Eats</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Order on Skip the Dishes</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Call Gastown</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="delivery__location">
+              <div class="delivery__locationOutline">
+                <h3>GRANVILLE ISLAND</h3>
+                <ion-icon class="triggerIcon" name="add-outline"></ion-icon>
+                <ion-icon
+                  class="triggerIcon-minus"
+                  name="remove-outline"
+                ></ion-icon>
+              </div>
+              <div class="delivery__accordionContent">
+                <div class="">
+                  <p class="delivery__locationAddress">
+                    1833 Anderson St., Vancouver
+                  </p>
+                  <ul class="delivery__orderWaysList">
+                    <li class="orderWay">
+                      <a href="">Call Granville Island</a>
+                    </li>
+                    <li class="orderWay">
+                      <a href="">Order on DoorDash</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Nicolo's part -->
+    <div class="menu" id="menuSection">
+      <div class="pizza-slice">
+        <img src="./NICOLO/IMAGES/pizza.png" class="pizza-slice" />
+      </div>
+      <h1>MENU</h1>
+      <div class="pizza-menu">
+        <div class="pizza-menu__firsthalf-menu">
+          <p>
+            <strong>Tomato Pie – $15.50</strong> Tomato sauce, garlic, fresh
+            basil, oregano, olive oil (no cheese, vegan)
+          </p>
+          <p>
+            <strong>Original – $17.75</strong> Margherita pizza – tomato, fresh
+            mozzarella, basil
+          </p>
+          <p><strong>Classic – $17.75</strong> Pepperoni – a New York staple</p>
+          <p>
+            <strong>White Pie – $21</strong> Cheese pie – mozzarella, smoked
+            provolone, ricotta, grana, garlic, oregano
+          </p>
+          <p>
+            <strong>Pesto – $19.75</strong> Pesto sauce (basil, arugula,
+            artichoke, walnut) aged mozzarella, grana, ricotta
+          </p>
+          <p><strong>Meat – $22</strong> Salami, ham, sausage</p>
+        </div>
+        <div class="pizza-menu__secondhalf-menu">
+          <p><strong>Spice – $20</strong> Capicollo, spicy salami</p>
+          <p>
+            <strong>Paesano – $25</strong> Salami, ham, mushrooms, artichokes,
+            olives
+          </p>
+          <p>
+            <strong>Pep 150 – $22</strong> 150 slices of imported cup n' char
+            pepperoni
+          </p>
+          <p>
+            <strong>Fresh – $20.50</strong> Olive oil base, fresh mozzarella,
+            plum tomato, garlic, basil, fresh arugula
+          </p>
+          <p>
+            <strong>Hawaii – $20</strong> Ham, pineapple (sub ham for prosciutto
+            di parma – add $1)
+          </p>
+          <p><strong>Parma – $20.50</strong> Prosciutto di parma, mushrooms</p>
+          <p>
+            <strong>Vegan – $21.50</strong> Tomato sauce, cashew mozz, garlic,
+            artichokes, onions, olives
+          </p>
+        </div>
+      </div>
+      <h1>
+        CUSTOM PIE – $15.50 TOMATO SAUCE WITH/WITHOUT MOZZARELLA + TOPPINGS
+      </h1>
+      <div class="pizza-toppings">
+        <div class="pizza-toppings__firsthalf-menu">
+          <p>Toppings <strong>($3.25 each)</strong></p>
+          <p>+ Ham + Salami + Spicy salami + Capicollo + Sausage + Pepperoni</p>
+          <p>
+            + Cup n' Char pepperoni <strong>($4.25)</strong> + Prosciutto di
+            parma <strong>($4.25)</strong>
+          </p>
+        </div>
+        <div class="pizza-toppings__secondhalf-menu">
+          <p>
+            + Artichokes + Olives + Mushrooms + Tomato + Arugula + Onions +
+            Pineapple + Pesto
+          </p>
+          <p>
+            + Fresh mozzarella + Aged mozzarella + Ricotta + Smoked provolone +
+            Cashew mozzarella
+          </p>
+          <p>Extra basil <strong>(+$1.50)</strong></p>
+          <p>Garlic <strong>(+$1.50)</strong></p>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <p>*Substitutions <strong>$1</strong></p>
+        <p>*Substitute pesto sauce <strong>$2</strong></p>
+        <p>*Sub vegan cashew mozz <strong>$2</strong></p>
+        <p>*Sorry, no half and half</p>
+      </div>
+    </div>
+    <div class="story" id="ourStorySection">
+      <div class="story__story-part">
+        <img
+          class="image"
+          src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/our-story_8b3c630e-8456-407c-a98f-48b891da386d.jpg?v=1646751500"
+          alt="brooklyn-image"
+        />
+        <div class="story__story-tell">
+          <h1>OUR STORY</h1>
+          <p>
+            The “New York Pizza” dates back to 1905 when Gennaro Lombardi, an
+            immigrant pizzaiolo from Naples, began to serve pizza in his Little
+            Italy grocery store. Lombardi created a unique pizza style similar
+            to that from the old country. He still focused on a thin crust and
+            high-quality ingredients, but his pizzas were served ‘to go’ and ‘by
+            the slice.’
+          </p>
+          <p>
+            His influence led to the emergence of Italian American Pizzaiolos
+            who began to make quality slices all over the immigrant
+            neighbourhoods in Brooklyn. To this day, Brooklyn is renowned for
+            having New York’s best pizza.
+          </p>
+          <p>
+            We aim to bring a little New York to Vancouver by giving you an
+            experience that is straight outta Brooklyn…
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="collage-images">
+      <div class="images__first-collage">
+        <img
+          class="image"
+          src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/SOB-76.jpg?v=1648152632"
+          alt="images__first-image"
+        />
+        <img
+          class="image"
+          src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/SOB-83_8b37d4fa-f99a-4ead-be00-5fcba27abe41.jpg?v=1648152761"
+          alt="images__second-image"
+        />
+      </div>
+      <div class="story__second-collage">
+        <img
+          class="image"
+          src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/SOB-178.jpg?v=1643930330"
+          alt="images__third-image"
+        />
+        <img
+          class="image"
+          src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/SOB-59.jpg?v=1643930362"
+          alt="images__fourth-image"
+        />
+        <img
+          class="image"
+          src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/SOB-86.jpg?v=1643930355"
+          alt="images__fifth-image"
+        />
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- Kento's part -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__container">
+          <div class="footer__contents">
+            <section class="footer__quickLinks">
+              <h3 class="footer__sectionTitle">QUICK LINKS</h3>
+              <ul class="footer__linksList">
+                <li>
+                  <a href="#deliverySection">Delivery</a>
+                </li>
+                <li>
+                  <a href="#menuSection">Menu</a>
+                </li>
+                <li>
+                  <a href="#ourStorySection">Our Story</a>
+                </li>
+                <li>
+                  <a href="">Locations</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__contactUs">
+              <h3 class="footer__sectionTitle">CONTACT US</h3>
+              <ul class="footer__contactUsList">
+                <li>
+                  <p>General inquiries:</p>
+                </li>
+                <li>
+                  <p class="footer__contactEmail">info@straightbkpizza.com</p>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__getConnected">
+              <h3 class="footer__sectionTitle">GET CONNECTED</h3>
+              <ul class="footer__socialMediaIconsList">
+                <li>
+                  <a href="https://www.facebook.com/"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="footer__copyright">
+            <ul class="footer__copyrightList">
+              <li>
+                <p>© 2022, Straight Brooklyn Pizza</p>
+              </li>
+              <li>
+                <p>Web design by Acorn Strategy</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      var scroll = new SmoothScroll(
+        'a[href*="#"]',
+        {
+          speed: 1000,
+        }
+        // '[data-easing="easeInOutQuart"]',
+        // { easing: "easeInOutQuart" }
+      );
+      var easeInOutQuart = new SmoothScroll('[data-easing="easeInOutQuart"]', {
+        easing: "easeInOutQuart",
+      });
+    </script>
+    <script src="./KENTO/header.js"></script>
+  </body>
 </html>
