@@ -166,7 +166,7 @@ body {
   margin-top: 90px;
   height: 2em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 28px;
   padding: 3vw;
   background-color: #f8f8f8;
   font-family: "Roboto Slab", serif;
@@ -180,9 +180,11 @@ body {
 .details .img-container {
   overflow: hidden;
   background-color: #f1f2f3;
+  height: auto;
 }
 .details img {
   width: 100%;
+  display: block;
   -webkit-animation: pinchInAnime 1.5s ease-in-out 0.5s;
           animation: pinchInAnime 1.5s ease-in-out 0.5s;
 }
@@ -204,9 +206,9 @@ body {
 }
 .details .location-info {
   background-color: #f1f2f3;
-  padding: 9vw 2vw 0vw 2vw;
+  padding: 5vw 2vw 1vw 2vw;
   line-height: 1.5vw;
-  font-weight: 15px;
+  font-size: 15px;
 }
 .details .location-info .animationText {
   -webkit-animation: fadeInAnime 1.5s ease-in-out 0.5s;
@@ -236,14 +238,17 @@ body {
   font-size: 40px;
   margin-bottom: 5px;
   font-family: "Roboto Slab", serif;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  line-height: 3.5rem;
 }
 .details .location-info strong {
   padding-bottom: 1vw;
   line-height: 20px;
+  font-size: 15px;
 }
 .details .location-info span {
-  padding: 1px 0;
   font-weight: lighter;
   border-bottom: 1px solid;
   line-height: 20px;
@@ -253,21 +258,15 @@ body {
 }
 
 @media screen and (max-width: 770px) {
+  .title {
+    padding: 23vw 0;
+  }
+
   .details {
     grid-template-columns: 1fr;
   }
   .details .location-info {
     text-align: center;
-  }
-  .details .location-info h1 {
-    line-height: 3.5rem;
-  }
-  .details .location-info h4 {
-    padding: 2rem 0rem 1rem 0rem;
-  }
-  .details .location-info p {
-    padding: 0.8rem 0 0.5rem 0;
-    line-height: 150%;
   }
   .details .location-info p:last-child {
     padding-bottom: 3rem;
