@@ -25,6 +25,10 @@ body {
   transition: background 0.3s ease;
   z-index: 5;
   overflow: hidden;
+  background: transparent;
+}
+.header:hover {
+  background: #323232;
 }
 .header.active {
   background: #323232;
@@ -162,6 +166,7 @@ body {
   font-size: 22px;
   line-height: 35px;
   padding-top: 0.15rem;
+  cursor: pointer;
 }
 .delivery__location ion-icon.triggerIcon {
   display: block;

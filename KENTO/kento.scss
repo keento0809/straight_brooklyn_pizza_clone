@@ -37,6 +37,11 @@ body {
   transition: background 0.3s ease;
   z-index: 5;
   overflow: hidden;
+  background: transparent;
+
+  &:hover {
+    background: $colorBlack;
+  }
 
   &.active {
     background: $colorBlack;
@@ -188,6 +193,7 @@ body {
       font-size: 22px;
       line-height: 35px;
       padding-top: 0.15rem;
+      cursor: pointer;
 
       &.triggerIcon {
         display: block;
@@ -825,23 +831,30 @@ body {
       font-size: 22px;
       line-height: 35px;
       padding-top: 0.15rem;
+      cursor: pointer;
+    }
+
+    &.triggerIcon {
+      display: block;
+    }
+    &.triggerIcon-minus {
+      display: none;
+    }
+  }
+  & .delivery__accordionContent {
+    display: none;
+  }
+  &__location.showing {
+    & ion-icon {
+      &.triggerIcon {
+        display: none;
+      }
+      &.triggerIcon-minus {
+        display: block;
+      }
+    }
+    & .delivery__accordionContent {
+      display: block;
     }
   }
 }
-
-// @mixin testingStyle {
-//   color: aquamarine;
-//   font-weight: bold;
-//   list-style: none;
-
-//   &__container {
-//     color: orangered;
-//   }
-//   &__list {
-//     font-size: 40px;
-//   }
-// }
-
-// .testing {
-//   @include testingStyle;
-// }

@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="../KENTO/kento.css" />
     <title>Header</title>
   </head>
-  <body>
+  <body id="home">
     <header class="header">
       <div class="wrapper">
         <div class="header__container">
@@ -18,11 +30,13 @@
               <span></span>
             </div>
             <div class="header__title">
-              <img
-                class="header__titleLogo inHeaderLeft"
-                src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/Brooklyn_Logo_5.5in_wide_1445x.png?v=1646953696"
-                alt="logoImage"
-              />
+              <a data-easing="easeInOutQuad" href="#home">
+                <img
+                  class="header__titleLogo inHeaderLeft"
+                  src="https://cdn.shopify.com/s/files/1/0624/9739/0834/files/Brooklyn_Logo_5.5in_wide_1445x.png?v=1646953696"
+                  alt="logoImage"
+                />
+              </a>
             </div>
           </div>
           <div class="header__right">
@@ -36,7 +50,7 @@
             <nav class="header__nav">
               <ul class="header__navList">
                 <li>
-                  <a href="#deliverySection">Delivery</a>
+                  <a data-scroll href="#deliverySection">Delivery</a>
                 </li>
                 <li>
                   <a href="#menuSection">Menu</a>
@@ -61,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="delivery">
+    <div id="deliverySection" class="delivery">
       <div class="wrapper__delivery">
         <div class="delivery__container">
           <h1 class="delivery__title">DELIVERY</h1>
@@ -221,6 +235,19 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      var scroll = new SmoothScroll(
+        'a[href*="#"]',
+        {
+          speed: 1000,
+        }
+        // '[data-easing="easeInOutQuart"]',
+        // { easing: "easeInOutQuart" }
+      );
+      var easeInOutQuart = new SmoothScroll('[data-easing="easeInOutQuart"]', {
+        easing: "easeInOutQuart",
+      });
+    </script>
     <script src="../KENTO/header.js"></script>
   </body>
 </html>
