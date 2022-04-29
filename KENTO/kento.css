@@ -25,6 +25,10 @@ body {
   transition: background 0.3s ease;
   z-index: 5;
   overflow: hidden;
+  background: transparent;
+}
+.header:hover {
+  background: #323232;
 }
 .header.active {
   background: #323232;
